@@ -3,7 +3,7 @@
 import sender_stand_request
 
 
-# Создание автотеста (
+# Создание автотеста
 
 def test_create_get_track():
     j_body = sender_stand_request.create_new_order().json()  # создание заказа и конвертация ответа в формат json
