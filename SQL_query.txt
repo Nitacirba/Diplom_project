@@ -2,8 +2,8 @@
 1 задание
 SELECT c.login,
          COUNT(o."courierId")
-FROM "Orders" as o
-         LEFT OUTER JOIN "Couriers" as c
+FROM "Orders" AS o
+         LEFT OUTER JOIN "Couriers" AS c
                     ON o."courierId" = c.id
 WHERE o."inDelivery" = TRUE
 GROUP BY c.login;
