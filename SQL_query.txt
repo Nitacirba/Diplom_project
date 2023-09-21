@@ -9,7 +9,7 @@ WHERE o."inDelivery" = TRUE
 GROUP BY c.login;
 
 2 задание
-SELECT DISTINCT track,
+SELECT track,
        CASE
            WHEN "finished"=TRUE THEN 2
            WHEN "cancelled"= TRUE then -1
